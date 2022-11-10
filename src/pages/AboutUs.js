@@ -1,12 +1,14 @@
 import React from "react";
 //import componnents 
 import AboutSection from "../components/AboutSection";
+import ServesSection from "../components/ServesSection";
 
 const AboutUs=()=>{
   return(
-    <div>
+    <>
      <AboutSection />
-    </div>
-  )
+     <ServesSection />
+    </>
+  );
 }
 export default AboutUs;
