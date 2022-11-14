@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Nav =  () =>{
   return(
     <Navbar>
-       <Link to={"/"} id="logo" href="#">Capture</Link>
+       <Link to={"/"} id="logo">Capture</Link>
       <ul>
         <li>
           <Link to={"/"} className="link">1.About Us</Link>

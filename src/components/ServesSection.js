@@ -46,7 +46,7 @@ const ServesSection=()=>{
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="" />
+        <img src={home2} alt="home2" />
       </Image>
     </Serveces>
   )
