@@ -29,6 +29,9 @@ const Navbar=styled.div`
  align-items: center;
  padding:1rem 5rem;
  background:#282828;
+ position: sticky;
+ top:0;
+ z-index: 100;
  a{
   color:white;
   text-decoration: none;

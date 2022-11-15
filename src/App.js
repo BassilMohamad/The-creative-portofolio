@@ -10,19 +10,21 @@ import Nav from "./components/Nav"
 //import react router
 import {Route,Routes,useLocation} from "react-router-dom"
 import { AnimatePresence } from "framer-motion";
+import ScrollTop from "./components/ScrollTop";
 function App() {
   const location = useLocation();
   return (
     <div className="App"> 
       <GlobalStyled/>   
       <Nav />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<AboutUs/>}></Route>
+        <Route path="/" id="logo" element={<AboutUs/>}></Route>
         <Route path="/work" element={<OurWork/>}></Route>
         <Route path="/work/:id" element={<MoveDetail/>}></Route>
         <Route path="/contact" element={<ContactUs/>}></Route>
       </Routes>
+      <ScrollTop />
       </AnimatePresence>
     </div>
   );
