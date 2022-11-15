@@ -60,6 +60,9 @@ const Work=styled(motion.div)`
     padding:1rem 0rem;
     color:black
   }
+  @media (max-width:922px){
+    padding:2rem 2rem
+  }
 `
 const Move=styled(motion.div)`
   padding-bottom: 10rem;

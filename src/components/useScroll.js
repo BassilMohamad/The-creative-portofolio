@@ -3,7 +3,7 @@ import {useAnimation} from "framer-motion";
 
 export const useScroll=()=>{
   const controle=useAnimation();
-  const [element,view]=useInView({threshold:0.5});
+  const [element,view]=useInView({threshold:0.3});
   if(view){
     controle.start("hidden")
   }else{

@@ -64,6 +64,9 @@ const Faq=styled(About)`
      padding:1rem 0rem;
     }
   }
+  @media (max-width:922px){
+    justify-content: center;
+  }
 `
 
 export default FaqSection;

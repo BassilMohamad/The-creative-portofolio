@@ -7,6 +7,11 @@ const GlobalStyled= createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  @media (max-width:1250px){
+    font-size:75%
+  }
+}
 
 body{
  background:#1b1b1b;

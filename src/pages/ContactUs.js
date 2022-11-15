@@ -5,7 +5,7 @@ import {pageAnimation,titleAnim} from "../animation";
 import styled from "styled-components"
 const ContactUs=()=>{
   return(
-    <ContactStyle exit="exit" variants={pageAnimation} initial="hidden"             animate="show" style={{background:"#fff"}}>
+    <ContactStyle exit="exit" variants={pageAnimation} initial="hidden"     animate="show" >
       <Title>
         <Hide>
           <motion.h2 style={{color:"black"}} variants={titleAnim}>Get in touch.</motion.h2>
@@ -36,6 +36,7 @@ const ContactUs=()=>{
 }
 
 const  ContactStyle=styled(motion.div)`
+  background-color: white;
   padding:2.5rem 5rem ;
   color:#353535;
   min-height: 90vh;
@@ -43,6 +44,9 @@ const  ContactStyle=styled(motion.div)`
 const Title=styled(motion.div)`
   margin-bottom:4rem;
   color:black;
+  @media (max-width:922px){
+    margin-top:5rem;
+  }
 `
 
 const Hide= styled.div`
