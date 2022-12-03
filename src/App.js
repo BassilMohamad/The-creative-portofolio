@@ -19,9 +19,9 @@ function App() {
       <Nav />
       <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" id="logo" element={<AboutUs/>}></Route>
-        <Route path="/work" element={<OurWork/>}></Route>
-        <Route path="/work/:id" element={<MoveDetail/>}></Route>
+        <Route path="/" id="logo" exact element={<AboutUs/>}></Route>
+        <Route path="/work"  exact  element={<OurWork/>}></Route>
+        <Route path="/work/:id" exact element={<MoveDetail/>}></Route>
         <Route path="/contact" element={<ContactUs/>}></Route>
       </Routes>
       <ScrollTop />
